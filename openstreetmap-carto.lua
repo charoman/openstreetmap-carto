@@ -1,6 +1,14 @@
 -- For documentation of Lua tag transformations, see:
 -- https://github.com/openstreetmap/osm2pgsql/blob/master/docs/lua.md
 
+-----------------------------------------------------------------------------------------
+-- Ranz-082019 Change from original to add english only names in 3 filters
+-- can change the MapLang variable below to choose another on language:
+
+MapLang = "name:en" -- to change to another on language just change the end of the tag (i.e "name:en" to "name:de" German)
+NameCol = "name" -- the name of the name column to update. no ned to touch
+--------------------------------------------------------------------------------------------
+
 -- Objects with any of the following keys will be treated as polygon
 local polygon_keys = {
     'abandoned:aeroway',
@@ -298,12 +306,15 @@ function filter_tags_generic(tags)
     return 0, tags
 end
 
--- Filtering on nodes
+-- Filtering on nodes--Ranz-082019 Change from original to add english only names ( the if statment)
 function filter_tags_node (keyvalues, numberofkeys)
+	if keyvalues[MapLang] then
+		keyvalues[NameCol] = keyvalues[MapLang]
+	end
     return filter_tags_generic(keyvalues)
 end
 
--- Filtering on relations
+-- Filtering on relations---Ranz-082019 Change from original to add english only names
 function filter_basic_tags_rel (keyvalues, numberofkeys)
     -- Filter out objects that are filtered out by filter_tags_generic
     local filter, keyvalues = filter_tags_generic(keyvalues)
@@ -315,11 +326,14 @@ function filter_basic_tags_rel (keyvalues, numberofkeys)
     if ((keyvalues["type"] ~= "route") and (keyvalues["type"] ~= "multipolygon") and (keyvalues["type"] ~= "boundary")) then
         return 1, keyvalues
     end
-
+----Ranz-082019 Change from original to add english only names ( the if statment)
+	if keyvalues[MapLang] then
+		keyvalues[NameCol] = keyvalues[MapLang]
+	end
     return 0, keyvalues
 end
 
--- Filtering on ways
+-- Filtering on ways---Ranz-082019 Change from original to add english only names
 function filter_tags_way (keyvalues, numberofkeys)
     local filter = 0  -- Will object be filtered out?
     local polygon = 0 -- Will object be treated as polygon?
@@ -334,7 +348,10 @@ function filter_tags_way (keyvalues, numberofkeys)
 
     -- Add z_order column
     keyvalues["z_order"] = z_order(keyvalues)
-
+	---Ranz-082019 Change from original to add english only names ( the if statment)
+	if keyvalues[MapLang] then
+		keyvalues[NameCol] = keyvalues[MapLang]
+	end
     return filter, keyvalues, polygon, roads(keyvalues)
 end
 
