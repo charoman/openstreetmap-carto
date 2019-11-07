@@ -6,7 +6,7 @@
 #country-names {
   [zoom >= 3][zoom < 5][way_pixels > 1000],
   [zoom >= 5][way_pixels < 360000] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: 10;
     text-wrap-width: 35; // 3.5 em
     text-line-spacing: -1.5; // -0.15 em
@@ -45,7 +45,7 @@
 #state-names {
   [zoom >= 5][zoom < 7][way_pixels > 3000],
   [zoom >= 7][way_pixels > 3000][way_pixels < 196000] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: 10;
     text-wrap-width: 30; // 3.0 em
     text-line-spacing: -1.5; // -0.15 em
@@ -222,7 +222,7 @@
       }
     }
     [zoom >= 8] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: 10;
       text-fill: @placenames;
       text-face-name: @book-fonts;
@@ -262,7 +262,7 @@
 #placenames-medium::low-importance {
   [category = 2] {
     [zoom >= 9][zoom < 16] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: 10;
       text-fill: @placenames;
       text-face-name: @book-fonts;
@@ -295,7 +295,7 @@
 
 #placenames-small::suburb {
   [place = 'suburb'][zoom >= 12][zoom < 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: 11;
     text-fill: @placenames;
     text-face-name: @book-fonts;
@@ -330,7 +330,7 @@
 #placenames-small::village {
   [place = 'village'] {
     [zoom >= 12][zoom < 17] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: 10;
       text-fill: @placenames;
       text-face-name: @book-fonts;
@@ -372,7 +372,7 @@
 #placenames-small::quarter {
   [place = 'quarter'] {
     [zoom >= 14][zoom < 17] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-fill: @placenames;
       text-face-name: @book-fonts;
       text-halo-fill: @standard-halo-fill;
@@ -401,7 +401,7 @@
   }
   [place = 'hamlet'] {
     [zoom >= 14][zoom < 18] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-fill: @placenames;
       text-face-name: @book-fonts;
       text-halo-fill: white;
@@ -436,7 +436,7 @@
   [place = 'neighbourhood'][zoom >= 15][zoom < 20],
   [place = 'isolated_dwelling'][zoom >= 15],
   [place = 'farm'][zoom >= 15] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: 10;
     text-fill: @placenames;
     text-face-name: @book-fonts;
@@ -456,7 +456,7 @@
   }
   [place = 'square'] {
     [zoom >= 17] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: 11;
       text-face-name: @book-fonts;
       text-wrap-width: 30; // 2.7 em

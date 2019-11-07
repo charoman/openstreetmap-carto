@@ -259,7 +259,7 @@
 
   [lock != 'yes'][int_tunnel != 'yes'] {
     [waterway = 'river'][zoom >= 13] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: 10;
       text-face-name: @oblique-fonts;
       text-fill: @water-text;
@@ -272,7 +272,7 @@
     }
 
     [waterway = 'canal'][zoom >= 13] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: 10;
       text-face-name: @oblique-fonts;
       text-fill: @water-text;
@@ -283,7 +283,7 @@
     }
 
     [waterway = 'stream'][zoom >= 15] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: 10;
       text-face-name: @oblique-fonts;
       text-fill: @water-text;
@@ -299,7 +299,7 @@
     [waterway = 'drain'],
     [waterway = 'ditch'] {
       [zoom >= 15] {
-        text-name: "[name]";
+        text-name: "[int_name]";
         text-size: 10;
         text-face-name: @oblique-fonts;
         text-fill: @water-text;
@@ -315,7 +315,7 @@
   }
   [natural = 'bay'][zoom >= 14],
   [natural = 'strait'][zoom >= 14] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: 10;
     text-face-name: @oblique-fonts;
     text-fill: @water-text;
@@ -343,7 +343,7 @@
     [zoom >= 14][way_pixels <= 768000][feature = 'natural_bay'],
     [zoom >= 14][way_pixels <= 768000][feature = 'natural_strait'],
     [zoom >= 17][way_pixels <= 768000] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: 10;
       text-wrap-width: 25; // 2.5 em
       text-line-spacing: -1.5; // -0.15 em

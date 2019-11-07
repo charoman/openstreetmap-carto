@@ -1579,7 +1579,7 @@
   [feature = 'place_island'][zoom >= 16][way_pixels <= 768000],
   [feature = 'place_islet'][zoom >= 11][way_pixels > 3000][way_pixels <= 768000],
   [feature = 'place_islet'][zoom >= 17][way_pixels <= 768000] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-fill: #000;
     text-size: @landcover-font-size;
     text-wrap-width: @landcover-wrap-width-size;
@@ -1601,7 +1601,7 @@
   }
 
   [feature = 'place_locality'][zoom >= 16] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: 10;
     text-fill: @placenames;
     text-face-name: @book-fonts;
@@ -1628,7 +1628,7 @@
   [feature = 'amenity_biergarten'][zoom >= 18],
   [feature = 'amenity_bar'][zoom >= 18],
   [feature = 'amenity_ice_cream'][zoom >= 18] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-fill: @gastronomy-text;
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
@@ -1651,7 +1651,7 @@
   [feature = 'historic_archaeological_site'],
   [feature = 'amenity_nightclub'] {
     [zoom >= 17] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -1668,7 +1668,7 @@
   }
 
   [feature = 'amenity_public_bath'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1680,7 +1680,7 @@
   }
 
   [feature = 'leisure_sauna'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1696,7 +1696,7 @@
   [feature = 'amenity_boat_rental'][zoom >= 17],
   [feature = 'barrier_toll_booth'][zoom >= 17],
   [feature = 'leisure_slipway'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1720,7 +1720,7 @@
   [feature = 'amenity_prison'][zoom >= 17],
   [feature = 'amenity_embassy'][zoom >= 17],
   [feature = 'amenity_bank'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1745,7 +1745,7 @@
   [feature = 'leisure_amusement_arcade'][zoom >= 17],
   [feature = 'leisure_outdoor_seating'][zoom >= 19],
   [feature = 'leisure_fishing'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1769,7 +1769,7 @@
   [feature = 'amenity_drinking_water'][zoom >= 17],
   [feature = 'amenity_shower'][zoom >= 18],
   [feature = 'tourism_picnic_site'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1789,7 +1789,7 @@
 
   [feature = 'amenity_place_of_worship'][zoom >= 16][way_pixels > 3000],
   [feature = 'amenity_place_of_worship'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1802,7 +1802,7 @@
 
   [feature = 'amenity_marketplace'][zoom >= 16][way_pixels > 3000],
   [feature = 'amenity_marketplace'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1817,7 +1817,7 @@
   [feature = 'natural_volcano'][zoom >= 13],
   [feature = 'natural_saddle'][zoom >= 15],
   [feature = 'tourism_viewpoint'][zoom >= 16] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1831,7 +1831,7 @@
   }
 
   [feature = 'natural_cape'][zoom >= 14] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-fill: #000;
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
@@ -1843,7 +1843,7 @@
 
   [feature = 'tourism_information'][zoom >= 19],
   [feature = 'tourism_information']["information"='office'][zoom >= 17] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -1860,7 +1860,7 @@
     [zoom >= 14][height > 10],
     [zoom >= 15][name != null],
     [zoom >= 16] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -1888,7 +1888,7 @@
   [feature = 'man_made_chimney'][zoom >= 17],
   [feature = 'man_made_crane'][zoom >= 17],
   [feature = 'man_made_waste_water_plant'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1928,7 +1928,7 @@
   [feature = 'historic_fort'][zoom >= 16],
   [feature = 'historic_castle'][zoom >= 16],
   [feature = 'historic_manor'][zoom >= 16] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1940,7 +1940,7 @@
   }
 
   [feature = 'military_bunker'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1953,7 +1953,7 @@
 
   [feature = 'leisure_miniature_golf'][zoom >= 17],
   [feature = 'leisure_golf_course'][zoom >= 15] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -1971,7 +1971,7 @@
     [way_area >= 80000][zoom >= 15],
     [way_area >= 20000][zoom >= 16],
     [zoom >= 17] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -1986,7 +1986,7 @@
   [feature = 'leisure_swimming_pool'][is_building = 'no'] {
     [zoom >= 14][way_pixels > 3000][way_pixels <= 768000],
     [zoom >= 17][way_pixels <= 768000] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2015,7 +2015,7 @@
     [way_area >= 80000][zoom >= 15],
     [way_area >= 20000][zoom >= 16],
     [zoom >= 17] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -2039,7 +2039,7 @@
   [feature = 'boundary_protected_area'] {
     [zoom >= 8][way_pixels > 3000][way_pixels <= 768000][is_building = 'no'],
     [zoom >= 17][way_pixels <= 768000] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2078,7 +2078,7 @@
   [feature = 'military_danger_area'][is_building = 'no'] {
     [zoom >= 9][way_pixels > 3000][way_pixels <= 768000],
     [zoom >= 17][way_pixels <= 768000] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2103,7 +2103,7 @@
   [feature = 'landuse_garages'][is_building = 'no'] {
     [zoom >= 13][way_pixels > 3000][way_pixels <= 768000],
     [zoom >= 17][way_pixels <= 768000] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2180,7 +2180,7 @@
     [zoom >= 17][way_pixels <= 768000][is_building = 'no'],
     [zoom >= 10][way_pixels > 3000][way_pixels <= 768000][shop = 'mall'],
     [zoom >= 17][way_pixels <= 768000][shop = 'mall'] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2316,7 +2316,7 @@
   }
 
   [feature = 'natural_spring'][zoom >= 16] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: 10;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2343,7 +2343,7 @@
   [feature = 'amenity_bureau_de_change'][zoom >= 17],
   [feature = 'amenity_public_bookcase'][zoom >= 19],
   [feature = 'tourism_gallery'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2366,7 +2366,7 @@
   [feature = 'tourism_wilderness_hut'][zoom >= 14],
   [feature = 'tourism_camp_site'][zoom >= 17],
   [feature = 'tourism_caravan_site'][zoom >= 17], {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2397,7 +2397,7 @@
   }
 
   [feature = 'amenity_taxi'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2413,7 +2413,7 @@
   [feature = 'amenity_fuel'],
   [feature = 'amenity_bus_station'] {
     [zoom >= 17] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -2435,7 +2435,7 @@
   [feature = 'leisure_marina'][zoom >= 15] {
     [zoom >= 10][way_pixels > 3000][way_pixels <= 768000],
     [zoom >= 17][way_pixels <= 768000] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2457,7 +2457,7 @@
   }
 
   [feature = 'amenity_fountain'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2473,7 +2473,7 @@
 
   [feature = 'man_made_lighthouse'][zoom >= 15],
   [feature = 'man_made_windmill'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2486,7 +2486,7 @@
 
   [feature = 'amenity_recycling'][recycling_type = 'centre'][zoom >= 17],
   [feature = 'amenity_recycling'][zoom >= 19] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2499,7 +2499,7 @@
 
   [feature = 'amenity_hospital'][zoom >= 16],
   [feature = 'healthcare_hospital'][zoom >= 16] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-fill: @health-color;
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
@@ -2537,7 +2537,7 @@
   [feature = 'healthcare_speech_therapist'],
   [feature = 'healthcare_yes'] {
     [zoom >= 17] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -2552,7 +2552,7 @@
   [feature = 'amenity_nursing_home'],
   [feature = 'amenity_childcare'] {
     [zoom >= 18] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2566,7 +2566,7 @@
 
   [feature = 'amenity_driving_school'] {
     [zoom >= 18] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -2581,7 +2581,7 @@
   [feature = 'shop'][shop != 'mall'] {
     [way_pixels > 3000][zoom >= 17],
     [zoom >= 18] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -2638,7 +2638,7 @@
       [office = 'telecommunication'],
       [office = 'travel_agent'],
       [office = 'water_utility'] {
-        text-name: "[name]";
+        text-name: "[int_name]";
         text-size: @standard-font-size;
         text-wrap-width: @standard-wrap-width;
         text-line-spacing: @standard-line-spacing-size;
@@ -2652,7 +2652,7 @@
 
     // all other offices
     [zoom >= 19] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -2667,7 +2667,7 @@
   [feature = 'shop_supermarket'],
   [feature = 'shop_department_store'] {
     [zoom >= 16] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -2697,7 +2697,7 @@
   [feature = 'power_substation'][is_building = 'no'][zoom >= 13]{
     [way_pixels > 3000][way_pixels <= 768000],
     [zoom >= 17][way_pixels <= 768000] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2724,7 +2724,7 @@
   [feature = 'natural_sand'] {
     [zoom >= 8][way_pixels > 3000][way_pixels <= 768000][is_building = 'no'],
     [zoom >= 17][way_pixels <= 768000][is_building = 'no'] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2756,7 +2756,7 @@
   [feature = 'aeroway_apron'][is_building = 'no'] {
     [zoom >= 10][way_pixels > 3000][way_pixels <= 768000],
     [zoom >= 17][way_pixels <= 768000] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2781,7 +2781,7 @@
   [feature = 'highway_rest_area'][is_building = 'no'] {
     [zoom >= 10][way_pixels > 3000][way_pixels <= 768000],
     [zoom >= 17][way_pixels <= 768000] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2806,7 +2806,7 @@
     [zoom >= 8][way_pixels > 10000][way_pixels <= 768000],
     [zoom >= 10][way_pixels > 750][way_pixels <= 768000],
     [zoom >= 17][way_pixels <= 768000] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @landcover-font-size;
       text-wrap-width: @landcover-wrap-width-size;
       text-line-spacing: @landcover-line-spacing-size;
@@ -2829,7 +2829,7 @@
   }
 
   [feature = 'aeroway_helipad'][zoom >= 16] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2846,7 +2846,7 @@
   [feature = 'aeroway_aerodrome']['iata' = null][zoom >= 13][zoom < 18] {
     [way_pixels <= 192000],
     [way_pixels = null] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -2859,7 +2859,7 @@
   }
 
   [feature = 'amenity_ferry_terminal'][zoom >= 15] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2871,7 +2871,7 @@
   }
 
   [feature = 'amenity_hunting_stand'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2883,7 +2883,7 @@
   }
 
   [feature = 'natural_tree'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2898,7 +2898,7 @@
   }
 
   [feature = 'amenity_casino'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-fill: @amenity-brown;
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
@@ -2910,7 +2910,7 @@
   }
 
   [feature = 'tourism_attraction'][zoom >= 17][is_building = 'no'] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2926,7 +2926,7 @@
   [feature = 'amenity_parking_entrance'] {
     [zoom >= 14][way_pixels > 3000],
     [zoom >= 18] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
@@ -2949,7 +2949,7 @@
   [feature = 'man_made_cross'][zoom >= 17],
   [feature = 'historic_wayside_cross'][zoom >= 17],
   [feature = 'historic_wayside_shrine'][zoom >= 17] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2991,7 +2991,7 @@
       [zoom >= 19] { line-width: 4; }
 
       [zoom >= 19] {
-        text-name: "[name]";
+        text-name: "[int_name]";
         text-size: 10;
         text-face-name: @oblique-fonts;
         text-fill: darken(@pitch, 40%);
@@ -3022,7 +3022,7 @@
       [zoom >= 19] { line-width: 4; }
 
       [zoom >= 19] {
-        text-name: "[name]";
+        text-name: "[int_name]";
         text-size: 10;
         text-face-name: @oblique-fonts;
         text-fill: darken(@pitch, 40%);

@@ -939,7 +939,7 @@
 #text-line {
   [feature = 'natural_cliff'][zoom >= 15],
   [feature = 'man_made_embankment'][zoom >= 15] {
-    text-name: "[name]";
+    text-name: "[int_name]";
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
     text-fill: #999;

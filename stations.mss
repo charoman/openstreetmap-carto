@@ -30,7 +30,7 @@
       marker-width: 6;
     }
     [zoom >= 14] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-face-name: @bold-fonts;
       text-size: 10;
       text-fill: @station-text;
@@ -60,7 +60,7 @@
       }
     }
     [zoom >= 15] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-face-name: @bold-fonts;
       text-size: @standard-font-size;
       text-fill: @station-text;
@@ -83,7 +83,7 @@
       marker-width: 6;
     }
     [zoom >= 14] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-face-name: @book-fonts;
       text-size: @standard-font-size;
       text-fill: @station-text;
@@ -106,7 +106,7 @@
       }
     }
     [zoom >= 16] {
-      text-name: "[name]";
+      text-name: "[int_name]";
       text-face-name: @book-fonts;
       text-size: @standard-font-size;
       text-fill: @station-text;
